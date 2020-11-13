@@ -9,7 +9,8 @@ process.stdout.on('data', data => {
 })
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.send('this get request was successful!');
+  res.render('index', { title: 'Express' });
+  console.log("hello!");
 });
 
 
